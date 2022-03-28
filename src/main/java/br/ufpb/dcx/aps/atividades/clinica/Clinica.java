@@ -10,15 +10,14 @@ public class Clinica {
 
 
     public void addPaciente(Paciente paciente){
-        if (prontuarios.containsKey(paciente))
-            throw new RuntimeException("Este paciente já está cadastrado!!");
 
         prontuarios.put(paciente,new Prontuario(paciente));
+
     }
 
-    public Prontuario getProntuario(Paciente paciente) throws ClinicaException {
-        if(!this.prontuarios.containsKey(paciente))
-            throw new ClinicaException("Paciente não existe"+paciente);
+    public Prontuario getProntuario(Paciente paciente){
         return prontuarios.get(paciente);
     }
+
+
 }

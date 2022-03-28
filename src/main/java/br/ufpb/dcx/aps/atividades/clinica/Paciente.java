@@ -2,7 +2,7 @@ package br.ufpb.dcx.aps.atividades.clinica;
 
 public class Paciente {
 
-    private String nome, cpf;
+    private String nome;
 
     public String getNome() {
         return nome;
@@ -19,4 +19,8 @@ public class Paciente {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    private String cpf;
+
+
 }
